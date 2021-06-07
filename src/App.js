@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'; 
-import './App.css';
+// import './App.css';
 
 function App() {
   // const name ='react';
@@ -15,19 +15,50 @@ function App() {
     //   }
     // </div> 
     // );
+
     // return <div>{name==='react'?<h1>리액트입니다.</h1>:null}</div>
+
     // JSX 여러줄은 ()로 감싸고 한줄은 감싸지 않는다.
     // return <div>{name==='react' && <h1>리액트입니다.</h1>}</div>
+
 // ==================================================================
-    const name = undefined;
+
+    // const name = undefined;
     //OR 연산자로 해당 값이 undefined 일때 사용할 값을 지정하면 오류 방지
     // return name || '값이 undefined';
+
     //JSX 내부에서 undefined를 렌더링하는 것은 괜찮음
     // return <div>{name}</div>
+
     // undefined일 때 보여 주고 싶은 문구가 있다면 다음과 같이 코드를 작성
-    return <div>{name||'react'}</div>
+    // return <div>{name||'react'}</div>
+
 // ===================================================================
 
+    const name = '리액트';
+    // style 객체를 미리 선언
+    // const style = {
+    //   backgroundColor: 'black',
+    //   color: 'aqua',
+    //   fontSize: '48px',
+    //   fontWeight: 'bold',
+    //   padding: 16
+    // }
+    // return <div style={style}>{name}</div>
+    
+    // style 값을 바로 지정
+    return (
+      <div
+      style = {{
+        backgroundColor: 'black',
+        color: 'aqua',
+        fontSize: '48px',
+        fontWeight: 'bold',
+        padding: 16
+      }}>
+        {name}
+      </div>
+    )
 }
 
 export default App;
