@@ -1,12 +1,30 @@
 import React, { Component } from "react";
 import "./App.css";
+import MyComponent from "./MyComponent";
 
-class App extends Component {
-  render() {
-    const name = "react";
-    return <div className="react">{name}</div>;
-  }
-}
+const App = () => {
+  return <MyComponent name="React" />;
+};
+
+//   {
+//     /* =================== JSX 내부 주석 ========================== */
+//   }
+
+// {
+//   /* 클래스형 컴포넌트
+//      render 함수 반드시 필요. 그 안에 보여 주어야 할 JSX를 반환
+//   */
+// }
+// class App extends Component {
+//   render() {
+//     const name = "react";
+//     return <div className="react">{name}</div>;
+//   }
+// }
+
+//   {
+//     /* =================== JSX 내부 주석 ========================== */
+//   }
 
 // function App() {
 //   // const name ='react';
