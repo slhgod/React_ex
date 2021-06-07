@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'; 
-// import './App.css';
+import './App.css';
 
 function App() {
   // const name ='react';
@@ -35,7 +35,7 @@ function App() {
 
 // ===================================================================
 
-    const name = '리액트';
+    // const name = '리액트';
     // style 객체를 미리 선언
     // const style = {
     //   backgroundColor: 'black',
@@ -45,20 +45,25 @@ function App() {
     //   padding: 16
     // }
     // return <div style={style}>{name}</div>
-    
+
     // style 값을 바로 지정
-    return (
-      <div
-      style = {{
-        backgroundColor: 'black',
-        color: 'aqua',
-        fontSize: '48px',
-        fontWeight: 'bold',
-        padding: 16
-      }}>
-        {name}
-      </div>
-    )
+    // return (
+    //   <div
+    //   style = {{
+    //     backgroundColor: 'black',
+    //     color: 'aqua',
+    //     fontSize: '48px',
+    //     fontWeight: 'bold',
+    //     padding: 16
+    //   }}>
+    //     {name}
+    //   </div>
+    // )
+
+    // ============================================================
+    //'./App.css' import 하기
+    const name = '리액트';
+    return <div className="react">{name}</div>
 }
 
 export default App;
