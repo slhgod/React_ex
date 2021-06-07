@@ -4,10 +4,15 @@ import React, { Fragment } from 'react';
 function App() {
   const name ='react';
   return (
-    <Fragment>
-      <h1>{name}리액트 안녕!</h1>
-      <h2>잘 작동하니?</h2>
-    </Fragment>  
+    <div>
+      { //조건부 연산자 
+        name === 'react' ? (
+          <h1>리액트 입니다.</h1>
+        ) : (
+          <h1>리액트가 아닙니다.</h1>
+        )
+      }
+    </div>  
     );
 }
 
