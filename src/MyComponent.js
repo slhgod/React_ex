@@ -8,8 +8,13 @@ import React from "react";
 //   return <div>나의 새롭고 멋진 컴포넌트</div>;
 // };
 
+// 컴포넌트. input이 있으면 output이 있음
 const MyComponent = (props) => {
   return <div>안녕, 내 이름은 {props.name}이야.</div>;
+};
+
+MyComponent.defaultProps = {
+  name: "기본 이름",
 };
 
 export default MyComponent;
