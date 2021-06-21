@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 // 105p.
 class Counter extends Component {
-  Constructor(props) {
+  constructor(props) {
     super(props);
     //state의 초기값 설정하기
     this.state = {
